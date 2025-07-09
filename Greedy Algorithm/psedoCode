@@ -1,0 +1,22 @@
+# All greedy algorithms follow this pattern:
+
+# Define the problem (what are you optimizing?).
+
+# Identify the greedy choice (what's the best local decision?).
+
+# Make the choice and commit to it (no backtracking).
+
+# Reduce the problem (remove the selected choice from future steps).
+
+# Repeat until the problem is solved.
+
+# function greedyAlgorithm(problem):
+#     solution = []  # Stores the final solution
+#     while problem is not solved:
+#         best_choice = selectBestOption(problem)  # Greedy selection
+#         if best_choice is valid:
+#             solution.append(best_choice)
+#             problem = reduceProblem(problem, best_choice)  # Update remaining problem
+#         else:
+#             break
+#     return solution
